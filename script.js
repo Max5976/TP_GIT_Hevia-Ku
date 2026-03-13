@@ -21,7 +21,7 @@ form.addEventListener("submit", function(e){
 let nombre = document.getElementById("nombre").value
 let idea = document.getElementById("idea").value
 
-if(nombre = "" || idea == ""){
+if(nombre === "" || idea === ""){
 
 document.getElementById("mensaje").innerText = "Completa todos los campos"
 
