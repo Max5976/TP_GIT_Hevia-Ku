@@ -1,66 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Ideas Último Año</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo 2026 | Ideas y Propuestas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header class="navbar">
+    <header class="navbar">
+        <div class="logo">🎓 Promo 2026</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#propuestas">Propuestas</a></li>
+                <li><a href="#galeria">Momentos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<h2>Ideas Último Año</h2>
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-container">
+                <h1>Hagamos este año inolvidable</h1>
+                <p>Participá en las decisiones de nuestra promoción. Tu idea puede ser la ganadora.</p>
+                <div class="voto-destacado">
+                    <button type="button" id="votar">🔥 ¡Apoyar esta iniciativa!</button>
+                    <p id="contador">Votos acumulados: <strong>0</strong></p>
+                </div>
+            </div>
+        </section>
+        <section id="propuestas" class="propuesta-section">
+            <div class="container">
+                <h2>Enviar una propuesta</h2>
+                <p>Completá el formulario para que todos vean tu idea (Buzos, Viaje, Fiesta, etc.)</p>
+                
+                <form id="formPropuesta">
+                    <div class="input-group">
+                        <label for="nombre">Tu nombre completo</label>
+                        <input type="text" id="nombre" placeholder="Ej: Aaron Martín" required>
+                    </div>
 
-<nav>
-<a href="#">Inicio</a>
-<a href="#">Propuestas</a>
-<a href="#">Contacto</a>
-</nav>
+                    <div class="input-group">
+                        <label for="categoria">Categoría de la idea</label>
+                        <select id="categoria">
+                            <option value="buzo">Diseño del Buzo</option>
+                            <option value="viaje">Viaje de Egresados</option>
+                            <option value="fiesta">Fiesta de Disfraces / Gala</option>
+                            <option value="despedida">Despedida / UPD</option>
+                        </select>
+                    </div>
 
-</header>
+                    <div class="input-group">
+                        <label for="idea">Explicá tu propuesta</label>
+                        <textarea id="idea" rows="4" placeholder="Contanos los detalles de tu idea..." required></textarea>
+                    </div>
 
+                    <button type="submit" class="btn-enviar">Enviar Propuesta</button>
+                    <p id="mensaje"></p>
+                </form>
+            </div>
+        </section>
 
-<section class="hero">
+        <section id="galeria" class="gallery">
+            <h2>Muro de Recuerdos</h2>
+            <div class="grid-fotos">
+                <div class="foto-placeholder">📸 Foto del UPD</div>
+                <div class="foto-placeholder">📸 Foto de la Entrega</div>
+                <div class="foto-placeholder">📸 Foto del Asado</div>
+            </div>
+        </section>
+    </main>
 
-<h1>Propuestas para el último año</h1>
-<p>Votá ideas para hacer este último año inolvidable.</p>
+    <footer>
+        <div class="footer-content">
+            <p>Hecho con ❤️ por la Promoción 2026</p>
+            <div class="links-redes">
+                <a href="#">Instagram</a>
+                <a href="#">Grupo de WhatsApp</a>
+            </div>
+        </div>
+    </footer>
 
-<button id="votar">Apoyar esta idea</button>
-
-<p id="contador">Votos: 0</p>
-
-</section>
-
-
-<section class="propuesta">
-
-<h2>Enviar una propuesta</h2>
-
-<form id="formPropuesta">
-
-<label>Tu nombre</label>
-<input type="text" id="nombre">
-
-<label>Tu propuesta</label>
-<input type="text" id="idea">
-
-<button>Enviar propuesta</button>
-
-<p id="mensaje"></p>
-
-</form>
-
-</section>
-
-
-<footer>
-
-<p>Promoción 2026</p>
-
-</footer>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
