@@ -136,10 +136,136 @@ input:focus, textarea:focus {
 
 
 /* Footer */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366;
+    color: white;
+    padding: 15px 5%;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #003366, #2193b0);
+    color: white;
+}
+
+.hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.5rem;
+}
+
+.voto-container {
+    margin-top: 25px;
+}
+
+#contador {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #e68900;
+    transform: scale(1.05);
+}
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+form h2 {
+    margin-top: 0;
+    color: #003366;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
 footer {
     text-align: center;
     padding: 30px;
     background-color: #003366;
     color: white;
     margin-top: 50px;
+    margin-top: 40px;
+}
+
+.socials {
+    margin-top: 10px;
+}
+
+.socials a {
+    color: #ff9800;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.socials a:hover {
+    text-decoration: underline;
 }
