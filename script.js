@@ -25,6 +25,8 @@ const form = document.getElementById("formPropuesta")
 
 form.addEventListener("submit", function(e){
 
+e.preventDefault()
+    
 let nombre = document.getElementById("nombre").value
 let idea = document.getElementById("idea").value
 
