@@ -1,15 +1,22 @@
 let votos = 0
+let yaVoto = false
 
 const boton = document.getElementById("votar")
 const textoVotos = document.getElementById("contador")
 
 boton.addEventListener("click", function(){
 
-votos = votos + 1
-
-textoVotos.innerText = "Votos: " + votos
-
-console.log("voto registrado")
+// verificar si ya votó
+if(yaVoto === true){
+    textoVotos.innerText = "Votos: " + votos + ". Como ya votaste, no puedes hacerlo otra vez."
+    console.log("voto denegado")
+}
+else {
+    votos += 1
+    textoVotos.innerText = "Votos: " + votos
+    console.log("voto registrado")
+    yaVoto = true
+}
 
 })
 
@@ -20,6 +27,8 @@ form.addEventListener("submit", function(e){
 
 let nombre = document.getElementById("nombre").value
 let idea = document.getElementById("idea").value
+
+document.getElementById("mensaje").innerText = "Mandaste tu propuesta"
 
 if(nombre === "" || idea === ""){
 
