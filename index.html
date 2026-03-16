@@ -3,78 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promo 2026 | Ideas y Propuestas</title>
+    <title>Promo 2026</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="logo">🎓 Promo 2026</div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#propuestas">Propuestas</a></li>
-                <li><a href="#galeria">Momentos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="navbar">
+    <div class="logo">🎓 Promo 2026</div>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#propuestas">Propuestas</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <main>
-        <section id="inicio" class="hero">
-            <div class="hero-container">
-                <h1>Hagamos este año inolvidable</h1>
-                <p>Participá en las decisiones de nuestra promoción. Tu idea puede ser la ganadora.</p>
-                <div class="voto-destacado">
-                    <button type="button" id="votar">🔥 ¡Apoyar esta iniciativa!</button>
-                    <p id="contador">Votos acumulados: <strong>0</strong></p>
-                </div>
-            </div>
-        </section>
-        <section id="propuestas" class="propuesta-section">
-            <div class="container">
-                <h2>Enviar una propuesta</h2>
-                <p>Completá el formulario para que todos vean tu idea (Buzos, Viaje, Fiesta, etc.)</p>
-                
-                <form id="formPropuesta">
-                    <div class="input-group">
-                        <label for="nombre">Tu nombre completo</label>
-                        <input type="text" id="nombre" placeholder="Ej: Aaron Martín" required>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="categoria">Categoría de la idea</label>
-                        <select id="categoria">
-                            <option value="buzo">Diseño del Buzo</option>
-                            <option value="viaje">Viaje de Egresados</option>
-                            <option value="fiesta">Fiesta de Disfraces / Gala</option>
-                            <option value="despedida">Despedida / UPD</option>
-                        </select>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="idea">Explicá tu propuesta</label>
-                        <textarea id="idea" rows="4" placeholder="Contanos los detalles de tu idea..." required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn-enviar">Enviar Propuesta</button>
-                    <p id="mensaje"></p>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>Hecho con ❤️ por la Promoción 2026</p>
-            <div class="links-redes">
-                <a href="#">Instagram</a>
-                <a href="#">Grupo de WhatsApp</a>
-            </div>
+<main>
+    <section class="hero">
+        <h1>Propuestas Último Año</h1>
+        <p>Votá y enviá tus ideas para que este año sea épico.</p>
+        
+        <div class="voto-container">
+            <button type="button" id="votar">🔥 Apoyar esta idea</button>
+            <p id="contador">Votos: <strong>0</strong></p>
         </div>
-    </footer>
+    </section>
 
-    <script src="script.js"></script>
+    <section id="propuestas" class="form-section">
+        <form id="formPropuesta">
+            <h2>Nueva Propuesta</h2>
+            
+            <label for="nombre">Tu nombre</label>
+            <input type="text" id="nombre" placeholder="Escribí tu nombre..." required>
+
+            <label for="idea">Tu idea</label>
+            <textarea id="idea" rows="4" placeholder="¿Qué tenés en mente?" required></textarea>
+
+            <button type="submit">Enviar propuesta</button>
+            <p id="mensaje"></p>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>Promoción 2026</p>
+    <div class="socials">
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://whatsapp.com" target="_blank">WhatsApp</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
